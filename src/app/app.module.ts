@@ -48,13 +48,16 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
 
 import { AppRoutingModule } from './app-routing.module';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { LeftNavComponent } from './nav/left-nav.component';
 import { HomeComponent } from './home/home.component';
+import { CustomerListComponent } from './customer/customer-list/customer-list.component';
 
 const appRoutes: Routes = [
   { path: 'home', component: HomeComponent },
+  { path: 'customer-list', component: CustomerListComponent },
   { path: '', component: HomeComponent },
 ];
 
@@ -62,7 +65,9 @@ const appRoutes: Routes = [
   declarations: [
     AppComponent,
     LeftNavComponent,
-    HomeComponent
+    HomeComponent,
+    CustomerListComponent,
+    CustomerListComponent
   ],
   imports: [
     BrowserModule,
@@ -76,6 +81,7 @@ const appRoutes: Routes = [
     FormsModule,
     ReactiveFormsModule,
     AppRoutingModule,
+    HttpClientModule,
     RouterModule.forRoot(appRoutes)
   ],
   exports: [

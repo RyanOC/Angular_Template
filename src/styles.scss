@@ -1,15 +1,26 @@
-// @import 'custom-theme-light.scss';
-// @import 'custom-theme-dark.scss';
-// @import '~@angular/material/theming';
+/* You can add global styles to this file, and also import other style files */
 
-// @include mat-core();
+// a {
+//     text-decoration-color: mat-color($app-primary);
+//     color: mat-color($app-primary);
+// }
 
-// .custom-theme-light {
-//   @include angular-material-theme($custom-theme-light);
-// }
-// .custom-theme-dark {
-//   @include angular-material-theme($custom-theme-dark);
-// }
+// .active-list-item { 
+//     color: mat-color($app-accent) !important;
+// } 
+
+@import 'custom-theme-light.scss';
+@import 'custom-theme-dark.scss';
+@import '~@angular/material/theming';
+
+@include mat-core();
+
+.custom-theme-light {
+  @include angular-material-theme($custom-theme-light);
+}
+.custom-theme-dark {
+  @include angular-material-theme($custom-theme-dark);
+}
 
 body { 
     //background: rgba(0,0,0,.87);
@@ -20,13 +31,4 @@ body {
 .biggericon {
     transform: scale(2);
     margin: 0 20px 0 10px;
-}
-
-.main-content {
-    
-  }
-
-.example-button-row button,
-.example-button-row a {
-  margin: 0 8px 20px 0;
 }

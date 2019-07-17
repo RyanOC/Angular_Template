@@ -7,18 +7,26 @@
     right: 0; 
   }
 
-  .sidenav {
-    width: 200px;
+  .mat-toolbar.mat-primary {
+    position: sticky;
+    top: 0;
+    z-index: 1;
   }
   
-  .example-radio-group {
-    display: block;
-    border: 1px solid #555;
-    margin: 20px;
-    padding: 10px;
+  .mat-list-item {
+    color: #adadad; 
+  } 
+  
+  .active-list-item {
+    color: #fff; 
+  } 
+  
+  .sidenav {
+    min-width: 200px;
+    max-width: 100%;
   }
-
-  .mat-drawer{
+  
+   .mat-drawer{
     border: 0px;
     /* background-color: #ff00ff; */
   } 
