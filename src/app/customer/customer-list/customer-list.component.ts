@@ -21,7 +21,7 @@ export class CustomerListComponent implements OnInit {
   message: string;
   people: any[];
 
-  url = environment.apiUrl + 'people';
+  url = environment.apiUrl + 'people/';
 
   constructor(private http: HttpClient) { }
 
